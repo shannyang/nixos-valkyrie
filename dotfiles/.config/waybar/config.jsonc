@@ -10,7 +10,7 @@
 
     "modules-left": ["custom/left","custom/rofi","pulseaudio","battery","custom/wlogout","custom/right"],
     "modules-center": ["custom/left","hyprland/workspaces","custom/right"],
-    "modules-right": ["custom/left","tray","clock","custom/right"],
+    "modules-right": ["custom/left","tray","custom/bluetooth","clock","custom/right"],
  
     "network": {
         "tooltip": true,
@@ -33,6 +33,13 @@
         "format": " ⏻  {}",
         "tooltip": false,
         "on-click": "wlogout"
+    },
+
+    "custom/bluetooth": {
+        "format": " 󰂯  {}",
+        "tooltip": true,
+        "tooltip-format": "Bluetooth",
+        "on-click": "kitty bluetui"
     },
 
     "hyprland/workspaces": {

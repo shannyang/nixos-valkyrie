@@ -23,6 +23,7 @@ window#waybar {
 #workspaces,
 #custom-rofi,
 #custom-wlogout,
+#custom-bluetooth,
 #tray,
 #pulseaudio,
 #custom-right,
@@ -80,6 +81,11 @@ tooltip {
   padding-right: 10px;
 }
 
+#custom-bluetooth {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 #custom-wlogout {
   padding-left: 10px;
   padding-right: 0px;
@@ -102,7 +108,7 @@ tooltip {
 
 #tray {
   padding-left: 0px;
-  padding-right: 19px;
+  padding-right: 0px;
 }
 
 #clock {

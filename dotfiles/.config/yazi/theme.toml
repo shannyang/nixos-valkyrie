@@ -2,8 +2,8 @@
 
 # : Manager {{{
 
-[manager]
-cwd = { fg = "#9ccfd8" }
+[mgr]
+cwd = { fg = "#f45e4d" }
 
 # Hovered
 hovered = { fg = "#e0def4", bg = "#26233a" }
@@ -26,9 +26,6 @@ tab_width = 1
 # Border
 border_symbol = "│"
 border_style = { fg = "#524f67" }
-
-# Highlighting
-syntect_theme = "~/.config/yazi/rose-pine.tmTheme"
 
 # : }}}
 

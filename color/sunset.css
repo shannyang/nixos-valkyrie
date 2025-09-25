@@ -1,0 +1,17 @@
+/* sunset.css */
+@define-color bg-default #0c1c33;
+@define-color bg-lighter #504156;
+@define-color bg-select #f27b63;
+@define-color text-comments #ad4d54;
+@define-color fg-dark #fea36a;
+@define-color fg-default #fec77a;
+@define-color fg-light-primary #fec77a;
+@define-color fg-light-alt #fec878;
+@define-color text-variables #e76664;
+@define-color text-literals #f45e4d; 
+@define-color text-classes-md #e46a62;
+@define-color text-strings #cb7876;
+@define-color text-support #de7069;
+@define-color text-func #f26056;
+@define-color text-keywords #e96755;
+@define-color text-faded #da726f;

@@ -1,0 +1,123 @@
+@define-color main-bg #0c1c33;
+@define-color bg-hover #ad4d54;
+@define-color border #f45e4d;
+@define-color text-main #fec77a;
+@define-color text-active #e96755;
+
+* {
+  border: none;
+  border-radius: 0px;
+  font-family: "FiraCode";
+  font-weight: normal;
+  font-size: 10px;
+  min-height: 13px;
+}
+
+window#waybar {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#battery,
+#temperature,
+#clock,
+#workspaces,
+#custom-rofi,
+#custom-wlogout,
+#tray,
+#pulseaudio,
+#custom-right,
+#custom-left {
+  color: @text-main;
+  background: alpha(@main-bg, 0.8);
+  margin: 4px 0px 4px 0px;
+  opacity: 1;
+}
+
+tooltip {
+  background: alpha(@main-bg, 0.8);
+  color: @text-main;
+  border-radius: 22px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: @border;
+}
+
+#workspaces button {
+  box-shadow: none;
+  text-shadow: none;
+  padding: 0px;
+  border-radius: 9px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: @text-main;
+  animation: gradient_f 20s ease-in infinite;
+  transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+}
+
+#workspaces button.active {
+  color: #e96755;
+  animation: gradient_f 20s ease-in infinite;
+  transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+}
+
+#workspaces button:hover {
+  background: @bg-hover; /* Rose Pine Moon - Surface */
+  color: @text-main;
+  border: none;
+}
+
+#workspaces {
+  padding: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#custom-rofi {
+  color: @text-active;
+  padding-left: 0px;
+  padding-right: 10px;
+}
+
+#custom-wlogout {
+  padding-left: 10px;
+  padding-right: 0px;
+}
+
+#backlight {
+  padding-left: 0px;
+  padding-right: 19px;
+}
+
+#pulseaudio {
+  padding-left: 0px;
+  padding-right: 19px;
+}
+
+#battery {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#tray {
+  padding-left: 0px;
+  padding-right: 19px;
+}
+
+#clock {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#custom-right {
+  margin-right: 9px;
+  padding-right: 3px;
+  border-radius: 0px 22px 22px 0px;
+}
+
+#custom-left {
+  margin-left: 9px;
+  padding-left: 3px;
+  border-radius: 22px 0px 0px 22px;
+}

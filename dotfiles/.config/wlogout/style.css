@@ -1,0 +1,24 @@
+* {
+    all: unset;
+    margin: unset;
+    padding: unset;
+    transition: 200ms cubic-bezier(0, 0, 1, 1);
+}
+
+button {
+    font-family: 'FiraCode Nerd Font Mono';
+    background-color: alpha(#0C1C33,.7);
+    color: #fec77a;
+    border-radius: 60px;
+    font-size: 5em;
+    margin: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 55px;
+}
+
+button:focus{
+    background-color: alpha(#ad4d54,1);
+    color: #0C1C33;
+    background-position:center;
+}

@@ -56,6 +56,7 @@ in
         ".config/wlogout".source = ../../dotfiles/.config/wlogout;
         ".config/kitty".source = ../../dotfiles/.config/kitty;
         ".config/wofi".source = ../../dotfiles/.config/wofi;
+        ".config/fastfetch".source = ../../dotfiles/.config/fastfetch;
       };
 
     };

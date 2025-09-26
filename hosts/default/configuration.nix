@@ -84,6 +84,11 @@ in
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
+    wireplumber.extraConfig.no-ucm = {
+      "monitor.alsa.properties" = {
+        "alsa.use-ucm" = false;
+      };
+    };
     enable = true;
     alsa.enable = true;
     alsa.support32Bit = true;
@@ -110,9 +115,12 @@ in
     vim
     wget
     tmux
+    gum
     grim
     slurp
     brightnessctl
+    pavucontrol
+    playerctl
     libreoffice-qt6
 
     # Monitoring
@@ -120,6 +128,7 @@ in
     htop
 
     # hyprland and desktop utils
+    pyprland
     waybar
     swww
     dunst

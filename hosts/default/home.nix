@@ -27,9 +27,13 @@ in
         # Browser
         firefox
 
+        # Social
+        discord
+
         # File management
         keepassxc
         localsend
+        rclone
         yazi
         unzip
         unrar

@@ -39,7 +39,7 @@
         "format": " 󰂯  {}",
         "tooltip": true,
         "tooltip-format": "Bluetooth",
-        "on-click": "kitty bluetui"
+        "on-click": "pypr toggle bluetooth"
     },
 
     "hyprland/workspaces": {

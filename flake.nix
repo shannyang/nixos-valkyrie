@@ -26,5 +26,14 @@
           inputs.home-manager.nixosModules.default
         ];
       };
+      nixosConfigurations.brynhildr = nixpkgs.lib.nixosSystem {
+        inherit system;
+        specialArgs = { inherit inputs; };
+        modules = [
+          ./hosts/brynhildr/configuration.nix
+          inputs.stylix.nixosModules.stylix
+          inputs.home-manager.nixosModules.default
+        ];
+      };
     };
 }

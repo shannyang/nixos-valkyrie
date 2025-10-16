@@ -10,7 +10,7 @@
 
     "modules-left": ["custom/left","custom/rofi","pulseaudio","battery","custom/wlogout","custom/right"],
     "modules-center": ["custom/left","hyprland/workspaces","custom/right"],
-    "modules-right": ["custom/left","tray","custom/bluetooth","clock","custom/right"],
+    "modules-right": ["custom/left", "custom/sync", "tray","custom/bluetooth","clock","custom/right"],
  
     "network": {
         "tooltip": true,
@@ -40,6 +40,13 @@
         "tooltip": true,
         "tooltip-format": "Bluetooth",
         "on-click": "pypr toggle bluetooth"
+    },
+
+    "custom/sync": {
+        "format": "   {}",
+        "tooltip": true,
+        "tooltip-format": "Sync GDrive",
+        "on-click": "rclone bisync GDrive: ~/GDrive"
     },
 
     "hyprland/workspaces": {

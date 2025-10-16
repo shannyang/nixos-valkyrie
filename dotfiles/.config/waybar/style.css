@@ -24,6 +24,7 @@ window#waybar {
 #custom-rofi,
 #custom-wlogout,
 #custom-bluetooth,
+#custom-sync,
 #tray,
 #pulseaudio,
 #custom-right,
@@ -84,6 +85,11 @@ tooltip {
 #custom-bluetooth {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+#custom-sync {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 #custom-wlogout {

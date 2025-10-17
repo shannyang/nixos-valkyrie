@@ -39,6 +39,9 @@ in
         unrar
         zip
 
+        # Content
+        krita
+
         # Utils
         imagemagick
         mpv

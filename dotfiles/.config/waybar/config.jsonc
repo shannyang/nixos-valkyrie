@@ -81,9 +81,9 @@
         "format": "{icon} {volume}",
         "format-muted": "󰖁",
         "on-click": "pavucontrol -t 3",
-        "on-click-middle": "~/.config/hypr/scripts/volumecontrol.sh -o m",
-        "on-scroll-up": "~/.config/hypr/scripts/volumecontrol.sh -o i",
-        "on-scroll-down": "~/.config/hypr/scripts/volumecontrol.sh -o d",
+        "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-scroll-up": "wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%+",
+        "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%-",
         "tooltip-format": "{icon} {desc} // {volume}%",
         "scroll-step": 5,
         "format-icons": {
@@ -105,7 +105,7 @@
 
 
     "clock": {
-        "format": " {:%H:%M}",
+        "format": " {:%R - %a %d %b}",
         "tooltip-format": "<tt>{calendar}</tt>",
         "calendar": {
             "format": {

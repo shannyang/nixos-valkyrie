@@ -46,7 +46,7 @@
         "format": "   {}",
         "tooltip": true,
         "tooltip-format": "Sync GDrive",
-        "on-click": "rclone bisync GDrive: ~/GDrive"
+        "on-click": "~/Scripts/sync.sh"
     },
 
     "hyprland/workspaces": {

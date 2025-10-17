@@ -32,7 +32,6 @@ in
 
         # File management
         keepassxc
-        localsend
         rclone
         yazi
         unzip

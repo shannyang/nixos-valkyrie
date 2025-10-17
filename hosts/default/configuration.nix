@@ -75,9 +75,12 @@ in
     hostName = hostName;
     networkmanager.enable = true;
     timeServers = options.networking.timeServers.default ++ [ "pool.ntp.org" ];
-    firewall.allowedTCPPorts = [ 
-      53317 # LocalSend
-    ];
+    firewall.allowedTCPPorts = [ ];
+  };
+
+  programs.localsend = {
+    enable = true;
+    openFirewall = true;
   };
 
   # Enable sound with pipewire.

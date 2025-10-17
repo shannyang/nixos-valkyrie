@@ -33,7 +33,6 @@ in
 
         # File management
         keepassxc
-        localsend
         rclone
         calibre
         yazi

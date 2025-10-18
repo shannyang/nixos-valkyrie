@@ -12,6 +12,13 @@ class = "kitty-dropterm"
 position = "17% 5%"
 size = "65% 40%"
 
+[scratchpads.yazi]
+animation = "fromTop"
+command = "kitty --class kitty-yazi -e yazi"
+class = "kitty-yazi"
+position = "17% 5%"
+size = "65% 40%"
+
 [scratchpads.bluetooth]
 animation = "fromTop"
 command = "kitty --class kitty-bluetooth -e bluetui"

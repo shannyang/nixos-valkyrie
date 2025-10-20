@@ -43,10 +43,11 @@ in
         # Content
         krita
         obs-studio
+        mpv
+        kew
 
         # Utils
         imagemagick
-        mpv
         qmk
       ];
 

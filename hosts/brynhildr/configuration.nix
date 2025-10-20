@@ -150,6 +150,9 @@ in
     networkmanagerapplet
     bluetui
     wlogout
+
+    # gaming
+    protonup-qt
   ];
 
   users = {

@@ -129,6 +129,7 @@ in
     # Monitoring
     fastfetch
     htop
+    mangohud
 
     # hyprland and desktop utils
     pyprland

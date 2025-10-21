@@ -9,7 +9,7 @@
 let
   username = "shannony";
   userDescription = "Shannon Yang";
-  hostName = "valkyrie";
+  hostName = "kara";
   stateVersion = "25.05";
 in
 {
@@ -71,7 +71,6 @@ in
     wget
     tmux
     gum
-    libreoffice-qt6
 
     # Monitoring
     fastfetch

@@ -17,11 +17,11 @@
     let
       system = "x86_64-linux";
     in {
-      nixosConfigurations.default = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.kara = nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = { inherit inputs; };
         modules = [
-          ./hosts/default/configuration.nix
+          ./hosts/kara/configuration.nix
           inputs.stylix.nixosModules.stylix
           inputs.home-manager.nixosModules.default
         ];

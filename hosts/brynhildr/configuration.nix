@@ -16,25 +16,12 @@ in
 {
   imports = [
     ./hardware-configuration.nix
-    ./theme.nix
+    ../../modules/hypr-desktop.nix
+    ../../modules/sound.nix
+    ../../modules/theme.nix
+    ../../modules/locale.nix
+    ../../modules/theme.nix
   ];
-
-  # Set your time zone.
-  time.timeZone = timeZone;
-
-  # Select internationalisation properties.
-  i18n.defaultLocale = "en_US.UTF-8";
-  i18n.extraLocaleSettings = {
-    LC_ADDRESS = "en_US.UTF-8";
-    LC_IDENTIFICATION = "en_US.UTF-8";
-    LC_MEASUREMENT = "en_US.UTF-8";
-    LC_MONETARY = "en_US.UTF-8";
-    LC_NAME = "en_US.UTF-8";
-    LC_NUMERIC = "en_US.UTF-8";
-    LC_PAPER = "en_US.UTF-8";
-    LC_TELEPHONE = "en_US.UTF-8";
-    LC_TIME = "en_US.UTF-8";
-  };
 
   # Boot
   boot.loader.grub = {
@@ -43,59 +30,21 @@ in
     efiSupport = true;
     useOSProber = true;
   };
+
   boot.loader.efi = {
     canTouchEfiVariables = true;
     efiSysMountPoint = "/boot";
   };
 
   hardware.bluetooth.enable = true;
-
-  services.greetd = {
-    enable = true;
-    settings = {
-      default_session = {
-        command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd hyprland";
-        user = username;
-      };
-    };
-  };
-
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
-
-  programs.steam.enable = true;
-
-  xdg.portal.enable = true;
-  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  services.udisks2.enable = true;
+  services.printing.enable = true;
 
   networking = {
     hostName = hostName;
     networkmanager.enable = true;
     timeServers = options.networking.timeServers.default ++ [ "pool.ntp.org" ];
     firewall.allowedTCPPorts = [ ];
-  };
-
-  programs.localsend = {
-    enable = true;
-    openFirewall = true;
-  };
-
-  # Enable sound with pipewire.
-  services.pulseaudio.enable = false;
-  security.rtkit.enable = true;
-  services.pipewire = {
-    wireplumber.extraConfig.no-ucm = {
-      "monitor.alsa.properties" = {
-        "alsa.use-ucm" = false;
-      };
-    };
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    jack.enable = true;
   };
 
   virtualisation = {
@@ -117,6 +66,13 @@ in
 
   nixpkgs.config.allowUnfree = true;
 
+  programs.steam.enable = true;
+
+  programs.localsend = {
+    enable = true;
+    openFirewall = true;
+  };
+
   environment.systemPackages = with pkgs; [
 
     # Basic utilities
@@ -126,33 +82,18 @@ in
     wget
     tmux
     gum
-    grim
-    slurp
-    brightnessctl
-    pavucontrol
-    playerctl
-    libreoffice-qt6
 
     # Monitoring
     fastfetch
-    htop
+    mangohud
 
-    # hyprland and desktop utils
-    pyprland
-    waybar
-    swww
-    dunst
-    hypridle
-    hyprlock
-    wl-clipboard
-    libnotify
-    wofi
-    networkmanagerapplet
-    bluetui
-    wlogout
-
-    # gaming
+    # Gaming
     protonup-qt
+    (heroic.override {
+      extraPkgs = pkgs: [
+        pkgs.gamescope
+      ];
+    })
   ];
 
   users = {
@@ -168,13 +109,11 @@ in
     };
   };
 
-  services.printing.enable = true;
-
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
   home-manager = {
     extraSpecialArgs = {inherit inputs; };
-    users.${username} = import ./home.nix;
+    users.${username} = import ./user.nix;
     useGlobalPkgs = true;
     useUserPackages = true;
     backupFileExtension = "backup";

@@ -29,25 +29,29 @@ in
 
         # Social
         discord
-        signal-desktop
+        signal-deskktop
 
         # File management
         keepassxc
         rclone
-        calibre
         yazi
         unzip
         unrar
         zip
+        calibre
 
         # Content
         krita
         obs-studio
-        mpv
-        kew
+        libreoffice-qt6
+        (calibre.override {
+          unrarSupport = true;
+        })
 
         # Utils
         imagemagick
+        mpv
+        kew
         qmk
       ];
 

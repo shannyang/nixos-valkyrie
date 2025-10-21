@@ -40,6 +40,8 @@ in
 
         # Content
         krita
+        obs-studio
+        libreoffice-qt6
 
         # Utils
         imagemagick

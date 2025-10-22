@@ -74,6 +74,8 @@ in
 
   environment.systemPackages = with pkgs; [
 
+    inputs.ataraxiasjel.packages.x86_64-linux.waydroid-script
+  
     # Basic utilities
     kitty
     git

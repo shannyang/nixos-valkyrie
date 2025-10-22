@@ -29,7 +29,7 @@ in
 
         # Social
         discord
-        signal-deskktop
+        signal-desktop
 
         # File management
         keepassxc
@@ -44,9 +44,6 @@ in
         krita
         obs-studio
         libreoffice-qt6
-        (calibre.override {
-          unrarSupport = true;
-        })
 
         # Utils
         imagemagick

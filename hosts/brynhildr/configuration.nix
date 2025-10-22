@@ -26,14 +26,8 @@ in
   # Boot
   boot.loader.grub = {
     enable = true;
-    device = "nodev";
-    efiSupport = true;
+    device = "/dev/sda";
     useOSProber = true;
-  };
-
-  boot.loader.efi = {
-    canTouchEfiVariables = true;
-    efiSysMountPoint = "/boot";
   };
 
   hardware.bluetooth.enable = true;
@@ -54,14 +48,19 @@ in
 
   hardware = {
     graphics.enable = true;
+    graphics.extraPackages = with pkgs; [
+      intel-media-driver
+      vpl-gpu-rt
+      intel-compute-runtime
+    ];
     nvidia = {
       modesetting.enable = true;
       powerManagement.enable = false;
       powerManagement.finegrained = false;
       open = true;
       nvidiaSettings = true;
-      # package = config.boot.kernelPackages.nvidiaPackages.stable;
-    }
+      package = config.boot.kernelPackages.nvidiaPackages.stable;
+    };
   };
 
   nixpkgs.config.allowUnfree = true;

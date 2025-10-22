@@ -38,7 +38,9 @@ in
         unzip
         unrar
         zip
-        calibre
+        (calibre.override {
+          unrarSupport = true;
+        })
 
         # Content
         krita

@@ -5,7 +5,16 @@ let
 in
   {
 
-    programs.home-manager.enable = true;
+    programs = {
+      home-manager.enable = true;
+      direnv = {
+        enable = true;
+        enableBashIntegration = true;
+        nix-direnv.enable = true;
+      };
+      bash.enable = true;
+    };
+
     stylix = {
         enable = true;
         base16Scheme = ../../color/sunset.yaml;

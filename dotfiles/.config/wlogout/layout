@@ -13,7 +13,7 @@
 
 {
     "label" : "logout",
-    "action" : "pkill Hyprland || loginctl terminate-user $USER",
+    "action" : "loginctl terminate-user $USER",
     "text": "󰈆",
     "keybind" : "e"
 }

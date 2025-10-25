@@ -49,6 +49,7 @@ in
 
         # Content
         krita
+        kew
         obs-studio
         libreoffice-qt6
 

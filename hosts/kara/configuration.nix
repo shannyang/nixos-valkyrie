@@ -23,19 +23,25 @@ in
   ];
 
   # Boot
-  boot.loader.grub = {
-    enable = true;
-    device = "nodev";
-    efiSupport = true;
-    useOSProber = true;
+  boot.loader = {
+    grub = {
+      enable = true;
+      device = "nodev";
+      efiSupport = true;
+      useOSProber = true;
+    };
+    efi = {
+      canTouchEfiVariables = true;
+      efiSysMountPoint = "/boot";
+    };
   };
 
-  boot.loader.efi = {
-    canTouchEfiVariables = true;
-    efiSysMountPoint = "/boot";
+  hardware = {
+    graphics.enable = true;
+    nvidia.modesetting.enable = true;
+    bluetooth.enable = true;
   };
 
-  hardware.bluetooth.enable = true;
   services.printing.enable = true;
 
   networking = {
@@ -49,17 +55,14 @@ in
     docker.enable = true;
   };
 
-  hardware = {
-    graphics.enable = true;
-    nvidia.modesetting.enable = true;
-  };
-
   nixpkgs.config.allowUnfree = true;
 
-  programs.steam.enable = true;
-  programs.localsend = {
-    enable = true;
-    openFirewall = true;
+  programs = {
+    steam.enable = true;
+    localsend = {
+      enable = true;
+      openFirewall = true;
+    };
   };
 
   environment.systemPackages = with pkgs; [

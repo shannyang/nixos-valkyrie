@@ -75,7 +75,7 @@ in
   environment.systemPackages = with pkgs; [
 
     # Basic utilities
-    kitty
+    foot
     git
     vim
     wget

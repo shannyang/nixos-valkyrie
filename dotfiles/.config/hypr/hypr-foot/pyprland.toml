@@ -7,21 +7,21 @@ plugins = [
 
 [scratchpads.term]
 animation = "fromTop"
-command = "kitty --class kitty-dropterm"
-class = "kitty-dropterm"
+command = "foot --app-id=foot-dropterm"
+class = "foot-dropterm"
 position = "17% 5%"
 size = "65% 40%"
 
 [scratchpads.yazi]
 animation = "fromTop"
-command = "kitty --class kitty-yazi -e yazi"
-class = "kitty-yazi"
+command = "foot --app-id=foot-yazi -e yazi"
+class = "foot-yazi"
 position = "17% 5%"
 size = "65% 40%"
 
 [scratchpads.bluetooth]
 animation = "fromTop"
-command = "kitty --class kitty-bluetooth -e bluetui"
-class = "kitty-bluetooth"
+command = "foot --app-id foot-bluetooth -e bluetui"
+class = "foot-bluetooth"
 position = "59% 5%"
 size = "40% 50%"

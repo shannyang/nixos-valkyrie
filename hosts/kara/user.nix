@@ -69,7 +69,7 @@ in
         # Config symlinks
         ".gitconfig".source = ../../dotfiles/.gitconfig;
         ".config/yazi".source = ../../dotfiles/.config/yazi;
-        ".config/hypr".source = ../../dotfiles/.config/hypr;
+        ".config/hypr".source = ../../dotfiles/.config/hypr/hypr-kitty;
         ".config/waybar".source = ../../dotfiles/.config/waybar;
         ".config/wlogout".source = ../../dotfiles/.config/wlogout;
         ".config/kitty".source = ../../dotfiles/.config/kitty;

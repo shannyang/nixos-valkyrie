@@ -61,7 +61,7 @@ in
       sessionVariables = {
         EDITOR = "nvim";
         VISUAL = "nvim";
-        TERMINAL = "kitty";
+        TERMINAL = "foot";
         BROWSER = "firefox";
       };
 
@@ -69,10 +69,10 @@ in
         # Config symlinks
         ".gitconfig".source = ../../dotfiles/.gitconfig;
         ".config/yazi".source = ../../dotfiles/.config/yazi;
-        ".config/hypr".source = ../../dotfiles/.config/hypr/hypr-kitty;
+        ".config/hypr".source = ../../dotfiles/.config/hypr/hypr-foot;
         ".config/waybar".source = ../../dotfiles/.config/waybar;
         ".config/wlogout".source = ../../dotfiles/.config/wlogout;
-        ".config/kitty".source = ../../dotfiles/.config/kitty;
+        ".config/foot".source = ../../dotfiles/.config/foot;
         ".config/wofi".source = ../../dotfiles/.config/wofi;
         ".config/fastfetch".source = ../../dotfiles/.config/fastfetch;
       };

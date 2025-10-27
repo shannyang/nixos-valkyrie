@@ -4,7 +4,7 @@
     	"source": "~/.config/fastfetch/img/Oswald.png",
     	"type": "auto",
     	"padding": {
-    		"top": 6,
+    		"top": 3,
             "left": 4
     	}
     },

@@ -1,6 +1,7 @@
 { config, lib, pkgs, ... }:
 let
   userName = "shannony";
+  hostName = "kara";
   stateVersion = "25.05";
 in
   {
@@ -12,7 +13,14 @@ in
         enableBashIntegration = true;
         nix-direnv.enable = true;
       };
-      bash.enable = true;
+      bash = {
+        enable = true;
+          shellAliases = {
+            os-rebuild = "sudo nixos-rebuild switch --flake '/home/${userName}/nixos-valkyrie#${hostName}'";
+            nixup = "~/Scripts/updates.sh";
+            sync-remote = "~/Scripts/sync.sh";
+          };
+      };
     };
 
     stylix = {

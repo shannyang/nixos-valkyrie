@@ -11,8 +11,14 @@ let
   userDescription = "Shannon Yang";
   hostName = "kara";
   stateVersion = "25.05";
+  overlays = import ../../modules/overlays.nix;
 in
 {
+
+  nixpkgs.overlays = [
+    overlays.discord-overlay
+  ];
+
   imports = [
     ./hardware-configuration.nix
     ../../modules/hypr-desktop.nix

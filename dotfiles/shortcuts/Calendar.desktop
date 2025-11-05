@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Calendar
+Type=Application
+Exec=firefox -new-window "https://calendar.google.com"
+Icon=text-html

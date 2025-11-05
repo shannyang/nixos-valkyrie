@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=kew
+Type=Application
+Exec=foot --app-id foot-kew kew
+Icon=text-html

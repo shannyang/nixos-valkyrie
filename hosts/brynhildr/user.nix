@@ -93,6 +93,11 @@ in
         ".config/hypr/hypridle.conf".source = ../../dotfiles/.config/hypr/hypridle.conf;
         ".config/hypr/hyprlock.conf".source = ../../dotfiles/.config/hypr/hyprlock.conf;
         ".config/hypr/pyprland.toml".source = ../../dotfiles/.config/hypr/pyprland.toml;
+
+        # Shortcuts
+        ".local/share/applications/Calendar.desktop".source = ../../dotfiles/shortcuts/Calendar.desktop;
+        ".local/share/applications/Notion.desktop".source = ../../dotfiles/shortcuts/Notion.desktop;
+        ".local/share/applications/kew.desktop".source = ../../dotfiles/shortcuts/kew.desktop;
       };
 
     };

@@ -36,6 +36,17 @@ in
     useOSProber = true;
   };
 
+  # Cinnamon
+  services.xserver = {
+    enable = true;
+    displayManager.startx.enable = true;
+    desktopManager.cinnamon.enable = true;
+    xkb = {
+      layout = "us";
+      variant = "";
+    };
+  };
+
   hardware.bluetooth.enable = true;
   services.udisks2.enable = true;
   services.printing.enable = true;

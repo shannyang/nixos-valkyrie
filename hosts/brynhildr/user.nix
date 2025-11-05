@@ -1,7 +1,6 @@
 { config, lib, pkgs, ... }:
 let
   userName = "shannony";
-  hostName = "brynhildr";
   stateVersion = "25.05";
 in
   {
@@ -15,11 +14,7 @@ in
       };
       bash = {
         enable = true;
-          shellAliases = {
-            os-rebuild = "sudo nixos-rebuild switch --flake '/home/${userName}/nixos-valkyrie#${hostName}'";
-            nixup = "~/Scripts/updates.sh";
-            sync-remote = "~/Scripts/sync.sh";
-          };
+          shellAliases = import ../../modules/shell-aliases.nix;
       };
     };
 

@@ -80,8 +80,11 @@ in
         ".config/waybar".source = ../../dotfiles/.config/waybar;
         ".config/wlogout".source = ../../dotfiles/.config/wlogout;
         ".config/foot".source = ../../dotfiles/.config/foot;
+        ".config/rofi".source = ../../dotfiles/.config/rofi;
         ".config/wofi".source = ../../dotfiles/.config/wofi;
         ".config/fastfetch".source = ../../dotfiles/.config/fastfetch;
+
+        ".icewm".source = ../../dotfiles/.config/icewm;
 
         ".config/hypr/hyprland.conf".source = ../../dotfiles/.config/hypr/hyprland-desktop.conf;
         ".config/hypr/hypridle.conf".source = ../../dotfiles/.config/hypr/hypridle.conf;

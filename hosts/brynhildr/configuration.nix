@@ -23,6 +23,7 @@ in
   imports = [
     ./hardware-configuration.nix
     ../../modules/hypr-desktop.nix
+    ../../modules/icewm-desktop.nix
     ../../modules/sound.nix
     ../../modules/theme.nix
     ../../modules/locale.nix
@@ -34,17 +35,6 @@ in
     enable = true;
     device = "/dev/sda";
     useOSProber = true;
-  };
-
-  # Cinnamon
-  services.xserver = {
-    enable = true;
-    displayManager.startx.enable = true;
-    desktopManager.cinnamon.enable = true;
-    xkb = {
-      layout = "us";
-      variant = "";
-    };
   };
 
   hardware.bluetooth.enable = true;

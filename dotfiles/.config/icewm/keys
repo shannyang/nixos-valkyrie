@@ -1,0 +1,3 @@
+    key "Super+q" xterm
+    key "Super+k" keepassxc
+    key "Super+Space" rofi -show drun

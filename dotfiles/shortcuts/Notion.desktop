@@ -3,3 +3,20 @@ Name=Notion
 Type=Application
 Exec=firefox -new-window "https://www.notion.so/"
 Icon=text-html
+Actions=Tasks;Recipes;DD;QuickNotes;
+
+[Desktop Action Tasks]
+Name=Tasks
+Exec=firefox "https://www.notion.so/knightlights-k/1a826ae320d9805d8226e65f60a04b78"
+
+[Desktop Action Recipes]
+Name=Recipes
+Exec=firefox "https://www.notion.so/knightlights-k/43a29b4e2cb84b02901853f27dcf8e20"
+
+[Desktop Action QuickNotes]
+Name=Quick Notes
+Exec=firefox "https://www.notion.so/knightlights-k/10126ae320d980bcbb3bc0549841497d"
+
+[Desktop Action DD]
+Name=TTRPG
+Exec=firefox "https://www.notion.so/knightlights-k/2a429890c9b5439a9e0177660ce2bcea"

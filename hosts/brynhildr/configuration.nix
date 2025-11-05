@@ -87,6 +87,8 @@ in
     wget
     tmux
     gum
+    bottles
+    appimage-run
 
     # Monitoring
     fastfetch

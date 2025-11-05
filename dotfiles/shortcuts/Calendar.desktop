@@ -3,3 +3,8 @@ Name=Calendar
 Type=Application
 Exec=firefox -new-window "https://calendar.google.com"
 Icon=text-html
+Actions=New;
+
+[Desktop Action New]
+Name=Add Event
+Exec=firefox "https://calendar.google.com/calendar/u/0/r/eventedit"

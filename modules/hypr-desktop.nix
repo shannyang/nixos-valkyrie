@@ -34,6 +34,8 @@
     playerctl
 
     # hyprland and desktop utils
+    foot
+    yazi
     pyprland
     waybar
     swww

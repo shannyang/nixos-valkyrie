@@ -46,7 +46,6 @@ in
         # File management
         keepassxc
         rclone
-        yazi
         unzip
         unrar
         zip

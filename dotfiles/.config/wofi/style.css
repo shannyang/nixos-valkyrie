@@ -95,8 +95,7 @@ window {
 }
 
 #entry:selected {
-    box-shadow: 1px 1px 5px rgba(255,255,255, .03);
-    border: none;
+    border: 1px solid alpha(#fec77a, 0.3);
     border-radius: 8px;
     background-color: #f45e4d;
 }

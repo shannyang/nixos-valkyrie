@@ -5,6 +5,9 @@ plugins = [
  "shift_monitors",
 ]
 
+[fetch_client_menu]
+engine = "wofi"
+
 [scratchpads.term]
 animation = "fromTop"
 command = "foot --app-id=foot-dropterm"

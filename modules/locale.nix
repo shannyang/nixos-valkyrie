@@ -1,11 +1,4 @@
 {
-  inputs,
-  pkgs,
-  config,
-  lib,
-  ...
-}:
-{
 
   time.timeZone = "America/Los_Angeles";
 

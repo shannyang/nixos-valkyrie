@@ -61,6 +61,11 @@ in
     docker.enable = true;
   };
 
+  valkyrie-desktop.hypr = {
+    enable = true;
+    greetd = true;
+  };
+
   nixpkgs.config.allowUnfree = true;
 
   programs = {

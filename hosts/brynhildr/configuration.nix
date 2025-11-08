@@ -70,6 +70,14 @@ in
     };
   };
 
+  valkyrie-desktop = {
+    hypr = {
+      enable = true;
+      greetd = true;
+    };
+    icewm.enable = true;
+  };
+
   nixpkgs.config.allowUnfree = true;
 
   programs.steam.enable = true;

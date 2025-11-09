@@ -38,6 +38,7 @@ in
 
         # Browser
         firefox
+        tor-browser
 
         # Social
         discord

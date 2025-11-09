@@ -39,6 +39,7 @@ in
 
         # Browser
         firefox
+        tor-browser
 
         # Social
         discord
@@ -49,6 +50,7 @@ in
         unzip
         unrar
         zip
+        calibre
 
         # Content
         krita

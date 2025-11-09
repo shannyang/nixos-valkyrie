@@ -43,6 +43,7 @@ in
 
         # Social
         discord
+        signal-desktop
 
         # File management
         keepassxc
@@ -54,6 +55,7 @@ in
 
         # Content
         krita
+        pureref
         kew
         obs-studio
         libreoffice-qt6

@@ -85,7 +85,7 @@ in
         ".config/wofi".source = ../../dotfiles/.config/wofi;
         ".config/fastfetch".source = ../../dotfiles/.config/fastfetch;
 
-        ".icewm".source = ../../dotfiles/.config/icewm;
+        ".icewm".source = ../../dotfiles/.icewm;
 
         ".config/hypr/hyprland.conf".source = ../../dotfiles/.config/hypr/hyprland-desktop.conf;
         ".config/hypr/hypridle.conf".source = ../../dotfiles/.config/hypr/hypridle.conf;

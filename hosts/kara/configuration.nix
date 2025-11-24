@@ -51,6 +51,8 @@ in
   services.udisks2.enable = true;
   services.printing.enable = true;
 
+  services.journald.extraConfig = "SystemMaxUse=100M";
+
   networking = {
     hostName = hostName;
     networkmanager.enable = true;

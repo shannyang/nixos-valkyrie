@@ -28,7 +28,7 @@ in
     inputs.nixos-hardware.nixosModules.framework-amd-ai-300-series
   ];
 
-  # Boot
+  boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.loader = {
     grub = {
       enable = true;

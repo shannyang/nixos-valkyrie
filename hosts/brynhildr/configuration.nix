@@ -16,10 +16,6 @@ let
 in
 {
 
-  nixpkgs.overlays = [
-    overlays.discord-overlay
-  ];
-
   imports = [
     ./hardware-configuration.nix
     ../../modules/hypr-desktop.nix

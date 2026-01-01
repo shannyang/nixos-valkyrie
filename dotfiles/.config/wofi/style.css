@@ -7,7 +7,7 @@
 
 * {
     font-family: 'Fira Code Nerd Font Mono', monospace;
-    font-size: 15px;
+    font-size: 13px;
     outline: none;
     border: none;
     text-shadow:none;
@@ -19,7 +19,7 @@ window {
     padding: 20px;
     border-radius: 30px;
     border: 2px solid #f27b63;
-    background-color: alpha(#0c1c33,.8);
+    background-color: alpha(#1a1110,.8);
 }
 
 #inner-box {

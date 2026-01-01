@@ -21,10 +21,3 @@ command = "foot --app-id=foot-yazi -e yazi"
 class = "foot-yazi"
 position = "17% 5%"
 size = "65% 40%"
-
-[scratchpads.bluetooth]
-animation = "fromTop"
-command = "foot --app-id foot-bluetooth -e bluetui"
-class = "foot-bluetooth"
-position = "59% 5%"
-size = "40% 50%"

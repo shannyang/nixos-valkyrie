@@ -75,16 +75,13 @@ in
       file = {
         # Config symlinks
         ".gitconfig".source = ../../dotfiles/.gitconfig;
+        ".config/caelestia".source = ../../dotfiles/.config/caelestia;
         ".config/yazi".source = ../../dotfiles/.config/yazi;
-        ".config/waybar".source = ../../dotfiles/.config/waybar;
-        ".config/wlogout".source = ../../dotfiles/.config/wlogout;
         ".config/foot".source = ../../dotfiles/.config/foot;
         ".config/wofi".source = ../../dotfiles/.config/wofi;
         ".config/fastfetch".source = ../../dotfiles/.config/fastfetch;
 
         ".config/hypr/hyprland.conf".source = ../../dotfiles/.config/hypr/hyprland-laptop.conf;
-        ".config/hypr/hypridle.conf".source = ../../dotfiles/.config/hypr/hypridle.conf;
-        ".config/hypr/hyprlock.conf".source = ../../dotfiles/.config/hypr/hyprlock.conf;
         ".config/hypr/pyprland.toml".source = ../../dotfiles/.config/hypr/pyprland.toml;
 
         # Shortcuts

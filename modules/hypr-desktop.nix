@@ -10,7 +10,7 @@ let
 in {
 
   options.valkyrie-desktop.hypr = {
-    enable = lib.mkEnableOption "Valkyrie desktop";
+    enable = lib.mkEnableOption "base hypr desktop";
     greetd = lib.mkEnableOption "tuigreet with hyprland default";
   };
 
@@ -37,26 +37,14 @@ in {
       grim
       slurp
 
-      # controls
-      brightnessctl
-      pavucontrol
-      playerctl
-
       # hyprland and desktop utils
       foot
       yazi
       pyprland
-      waybar
-      swww
-      dunst
       hypridle
       hyprlock
-      wl-clipboard
       libnotify
       wofi
-      networkmanagerapplet
-      bluetui
-      wlogout
     ];
   };
 }

@@ -46,6 +46,7 @@ in
 
   services.udisks2.enable = true;
   services.printing.enable = true;
+  services.upower.enable = true;
 
   services.journald.extraConfig = "SystemMaxUse=100M";
 
@@ -83,10 +84,10 @@ in
     wget
     tmux
     gum
-
-    # Monitoring
     fastfetch
-    htop
+
+    # Caelestia
+    inputs.caelestia-cli.packages.x86_64-linux.with-shell
   ];
 
   users = {

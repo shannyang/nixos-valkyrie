@@ -37,6 +37,7 @@ in
   hardware.bluetooth.enable = true;
   services.udisks2.enable = true;
   services.printing.enable = true;
+  services.upower.enable = true;
 
   services.journald.extraConfig = "SystemMaxUse=100M";
 
@@ -100,6 +101,9 @@ in
     # Monitoring
     fastfetch
     mangohud
+    
+    # Caelestia
+    inputs.caelestia-cli.packages.x86_64-linux.with-shell
 
     # Gaming
     protonup-qt

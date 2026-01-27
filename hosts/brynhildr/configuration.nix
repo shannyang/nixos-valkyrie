@@ -46,6 +46,7 @@ in
     networkmanager.enable = true;
     timeServers = options.networking.timeServers.default ++ [ "pool.ntp.org" ];
     firewall.allowedTCPPorts = [ ];
+    nftables.enable = true;
   };
 
   virtualisation = {

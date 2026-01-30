@@ -14,7 +14,7 @@ in
       };
       bash = {
         enable = true;
-          shellAliases = import ../../modules/shell-aliases.nix;
+        shellAliases = import ../../modules/shell-aliases.nix;
       };
     };
 
@@ -86,7 +86,8 @@ in
 
         ".icewm".source = ../../dotfiles/.icewm;
 
-        ".config/hypr/hyprland.conf".source = ../../dotfiles/.config/hypr/hyprland-desktop.conf;
+        ".config/hypr/hyprland.conf".source = ../../dotfiles/.config/hypr/hyprland.conf;
+        ".config/hypr/local.conf".source = ../../dotfiles/.config/hypr/hosts/brynhildr.conf;
         ".config/hypr/pyprland.toml".source = ../../dotfiles/.config/hypr/pyprland.toml;
 
         # Shortcuts

@@ -15,7 +15,7 @@ in
       };
       bash = {
         enable = true;
-          shellAliases = import ../../modules/shell-aliases.nix;
+        shellAliases = import ../../modules/shell-aliases.nix;
       };
     };
 
@@ -81,7 +81,8 @@ in
         ".config/wofi".source = ../../dotfiles/.config/wofi;
         ".config/fastfetch".source = ../../dotfiles/.config/fastfetch;
 
-        ".config/hypr/hyprland.conf".source = ../../dotfiles/.config/hypr/hyprland-laptop.conf;
+        ".config/hypr/hyprland.conf".source = ../../dotfiles/.config/hypr/hyprland.conf;
+        ".config/hypr/local.conf".source = ../../dotfiles/.config/hypr/hosts/kara.conf;
         ".config/hypr/pyprland.toml".source = ../../dotfiles/.config/hypr/pyprland.toml;
 
         # Shortcuts

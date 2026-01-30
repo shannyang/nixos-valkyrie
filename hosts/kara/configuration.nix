@@ -11,7 +11,6 @@ let
   userDescription = "Shannon Yang";
   hostName = "kara";
   stateVersion = "25.05";
-  overlays = import ../../modules/overlays.nix;
 in
 {
 

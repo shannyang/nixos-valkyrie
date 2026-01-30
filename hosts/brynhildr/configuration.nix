@@ -12,7 +12,6 @@ let
   timeZone = "America/Los_Angeles";
   hostName = "brynhildr";
   stateVersion = "25.05";
-  overlays = import ../../modules/overlays.nix;
 in
 {
 

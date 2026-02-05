@@ -23,6 +23,7 @@ in
     inputs.nixos-hardware.nixosModules.framework-amd-ai-300-series
   ];
 
+  system.stateVersion = stateVersion;
   boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.loader = {
     grub = {
@@ -89,7 +90,17 @@ in
     inputs.caelestia-cli.packages.x86_64-linux.with-shell
   ];
 
-  users = {
+  nix.settings.experimental-features = ["nix-command" "flakes"];
+
+  home-manager = {
+    extraSpecialArgs = {inherit inputs; };
+    users.${username} = import ./user.nix;
+    useGlobalPkgs = true;
+    useUserPackages = true;
+    backupFileExtension = "backup";
+  };
+
+    users = {
     mutableUsers = true;
     users.${username} = {
       isNormalUser = true;
@@ -101,17 +112,5 @@ in
       ];
     };
   };
-
-  nix.settings.experimental-features = ["nix-command" "flakes"];
-
-  home-manager = {
-    extraSpecialArgs = {inherit inputs; };
-    users.${username} = import ./user.nix;
-    useGlobalPkgs = true;
-    useUserPackages = true;
-    backupFileExtension = "backup";
-  };
-
-  system.stateVersion = stateVersion;
 
 }

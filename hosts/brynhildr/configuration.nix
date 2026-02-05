@@ -25,8 +25,8 @@ in
     ../../modules/theme.nix
   ];
 
+  system.stateVersion = stateVersion;
   boot.kernelPackages = pkgs.linuxPackages_latest;
-
   boot.loader.grub = {
     enable = true;
     device = "/dev/sda";
@@ -114,6 +114,16 @@ in
     })
   ];
 
+  nix.settings.experimental-features = ["nix-command" "flakes"];
+
+  home-manager = {
+    extraSpecialArgs = {inherit inputs; };
+    users.${username} = import ./user.nix;
+    useGlobalPkgs = true;
+    useUserPackages = true;
+    backupFileExtension = "backup";
+  };
+
   users = {
     mutableUsers = true;
     users.${username} = {
@@ -126,17 +136,5 @@ in
       ];
     };
   };
-
-  nix.settings.experimental-features = ["nix-command" "flakes"];
-
-  home-manager = {
-    extraSpecialArgs = {inherit inputs; };
-    users.${username} = import ./user.nix;
-    useGlobalPkgs = true;
-    useUserPackages = true;
-    backupFileExtension = "backup";
-  };
-
-  system.stateVersion = stateVersion;
 
 }

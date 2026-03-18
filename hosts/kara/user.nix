@@ -83,7 +83,7 @@ in
 
         ".config/hypr/hyprland.conf".source = ../../dotfiles/.config/hypr/hyprland.conf;
         ".config/hypr/local.conf".source = ../../dotfiles/.config/hypr/hosts/kara.conf;
-        ".config/hypr/pyprland.toml".source = ../../dotfiles/.config/hypr/pyprland.toml;
+        ".config/pypr/config.toml".source = ../../dotfiles/.config/pypr/config.toml;
 
         # Shortcuts
         ".local/share/applications/Calendar.desktop".source = ../../dotfiles/shortcuts/Calendar.desktop;

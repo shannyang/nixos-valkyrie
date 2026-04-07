@@ -22,11 +22,9 @@
     };
   };
   outputs = { nixpkgs, home-manager, stylix, caelestia-shell, ... }@inputs:
-    let
-      system = "x86_64-linux";
-    in {
+    {
       nixosConfigurations.kara = nixpkgs.lib.nixosSystem {
-        inherit system;
+        system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
           ./hosts/kara/configuration.nix
@@ -35,7 +33,7 @@
         ];
       };
       nixosConfigurations.brynhildr = nixpkgs.lib.nixosSystem {
-        inherit system;
+        system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
           ./hosts/brynhildr/configuration.nix

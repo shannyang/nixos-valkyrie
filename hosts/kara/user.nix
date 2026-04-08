@@ -23,6 +23,7 @@ in
         enable = true;
         base16Scheme = ../../color/sunset.yaml;
         polarity = "dark";
+        autoEnable = false;
     };
 
     home = {
@@ -33,7 +34,8 @@ in
 
       packages = with pkgs; [
         # Programming
-        vscode
+        kdePackages.kate
+        kdePackages.konsole
         neovim
         openssl
 

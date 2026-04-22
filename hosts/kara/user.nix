@@ -77,7 +77,7 @@ in
       file = {
         # Config symlinks
         ".gitconfig".source = ../../dotfiles/.gitconfig;
-        ".config/caelestia".source = ../../dotfiles/.config/caelestia;
+        ".config/caelestia/shell.json".source = ../../dotfiles/.config/caelestia/shell.json;
         ".config/yazi".source = ../../dotfiles/.config/yazi;
         ".config/foot".source = ../../dotfiles/.config/foot;
         ".config/wofi".source = ../../dotfiles/.config/wofi;

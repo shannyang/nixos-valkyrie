@@ -101,8 +101,8 @@ in
     fastfetch
     mangohud
     
-    # Caelestia
-    inputs.caelestia-cli.packages.x86_64-linux.with-shell
+    # Noctalia
+    noctalia-shell
 
     # Gaming
     protonup-qt

@@ -12,16 +12,8 @@
       url = "github:nix-community/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    caelestia-shell = {
-      url = "github:caelestia-dots/shell";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    caelestia-cli = {
-      url = "github:caelestia-dots/cli";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
-  outputs = { nixpkgs, home-manager, stylix, caelestia-shell, ... }@inputs:
+  outputs = { nixpkgs, home-manager, stylix, ... }@inputs:
     {
       nixosConfigurations.kara = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";

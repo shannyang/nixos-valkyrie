@@ -41,7 +41,19 @@ in
   hardware = {
     graphics.enable = true;
     nvidia.modesetting.enable = true;
-    bluetooth.enable = true;
+    bluetooth = {
+      enable = true;
+      powerOnBoot = true;
+      settings = {
+        General = {
+          Experimental = true;
+          FastConnectable = true;
+        };
+        Policy = {
+          AutoEnable = true;
+        };
+      };
+    };
   };
 
   services.udisks2.enable = true;
@@ -86,8 +98,8 @@ in
     gum
     fastfetch
 
-    # Caelestia
-    inputs.caelestia-cli.packages.x86_64-linux.with-shell
+    # Noctalia
+    noctalia-shell
   ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];

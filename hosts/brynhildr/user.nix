@@ -79,6 +79,7 @@ in
       file = {
         # Config symlinks
         ".gitconfig".source = ../../dotfiles/.gitconfig;
+        ".face".source = ../../dotfiles/.face;
         ".config/noctalia".source = ../../dotfiles/.config/noctalia;
         ".config/yazi".source = ../../dotfiles/.config/yazi;
         ".config/foot".source = ../../dotfiles/.config/foot;

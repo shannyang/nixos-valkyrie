@@ -26,11 +26,8 @@ in
   system.stateVersion = stateVersion;
   boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.loader = {
-    grub = {
+    limine = {
       enable = true;
-      device = "nodev";
-      efiSupport = true;
-      useOSProber = true;
     };
     efi = {
       canTouchEfiVariables = true;

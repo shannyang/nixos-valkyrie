@@ -89,8 +89,8 @@ in
 
         ".icewm".source = ../../dotfiles/.icewm;
 
-        ".config/hypr/hyprland.conf".source = ../../dotfiles/.config/hypr/hyprland.conf;
-        ".config/hypr/local.conf".source = ../../dotfiles/.config/hypr/hosts/brynhildr.conf;
+        ".config/hypr/hyprland.lua".source = ../../dotfiles/.config/hypr/hyprland.lua;
+        ".config/hypr/local.lua".source = ../../dotfiles/.config/hypr/hosts/brynhildr.lua;
         ".config/pypr/config.toml".source = ../../dotfiles/.config/pypr/config.toml;
 
         # Shortcuts

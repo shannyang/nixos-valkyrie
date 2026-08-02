@@ -9,6 +9,7 @@
   stylix = {
     enable = true;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/solarized-dark.yaml";
+    targets.limine.enable = false;
     polarity = "dark";
     cursor = {
       name = "Bibata-Modern-Ice";

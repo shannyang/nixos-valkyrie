@@ -28,6 +28,8 @@ in
   boot.loader = {
     limine = {
       enable = true;
+      style.wallpapers = [../../wallpaper/stefan-stefancik-TPv9dh822VA-unsplash.jpg];
+      style.graphicalTerminal.background = "EF000000";
     };
     efi = {
       canTouchEfiVariables = true;

@@ -18,7 +18,7 @@ hl.monitor({
 ---------------------
 
 -- Set programs that you use
-local terminal    = "kitty"
+local terminal    = "foot"
 local fileManager = "foot yazi"
 local menu        = "wofi -i --show drun -D key_expand=Tab"
 local ipc = "noctalia-shell ipc call "
@@ -111,6 +111,8 @@ hl.config({
         enabled = true,
     },
 })
+
+hl.config({ xwayland = { force_zero_scaling = true } })
 
 -- Default curves and animations, see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Animations/
 hl.curve("easeOutQuint",   { type = "bezier", points = { {0.23, 1},    {0.32, 1}    } })

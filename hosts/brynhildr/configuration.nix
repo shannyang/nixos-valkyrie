@@ -38,7 +38,9 @@ in
   services.printing.enable = true;
   services.upower.enable = true;
 
-  services.journald.extraConfig = "SystemMaxUse=100M";
+  services.journald.settings.Journal = {
+    SystemMaxUse = "100M";
+  };
 
   networking = {
     hostName = hostName;
